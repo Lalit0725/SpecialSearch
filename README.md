@@ -1,5 +1,5 @@
 # SpecialSearch
-Special Search is a tool for Unity Editor that gives more ways to search for the game object.
+Special Search is a tool for Unity Editor that gives more ways to search the game object.
 
 1) Search with GameObject name and it selects those gameobjects.
 
