@@ -78,7 +78,7 @@ namespace RedLabsGames.SpecialSearch
                 switch (wordCount)
                 {
                     case 1:
-                        if (obj.name.ToLower().Contains(gameObjectName.ToLower()))
+                        if (obj.name.ToLower() == gameObjectName.ToLower())
                         {
                             matchedObjects.Add(obj);
                             unMatchedName.Remove(obj);
@@ -86,7 +86,7 @@ namespace RedLabsGames.SpecialSearch
                         break;
 
                     case 2:
-                        if (obj.name.ToLower().Contains(gameObjectName.ToLower()))
+                        if (obj.name.ToLower() == gameObjectName.ToLower())
                         {
                             unMatchedComponent.Add(obj);
                             if (obj.GetComponent(gameObjectComponent) != null)
@@ -100,7 +100,7 @@ namespace RedLabsGames.SpecialSearch
                         Debug.LogError("Type The value");
                         break;
                     case 4:
-                        if (obj.name.ToLower().Contains(gameObjectName.ToLower()))
+                        if (obj.name.ToLower() == gameObjectName.ToLower())
                         {
                             unMatchedComponentValue.Add(obj);
                             if (obj.GetComponent(gameObjectComponent) == null)
